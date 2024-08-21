@@ -1,0 +1,84 @@
+body{
+  font-family: Arial;
+}
+.todo-output,
+.todo-input{
+  display: grid;
+  grid-template-columns: 200px 150px 100px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+}
+
+.todo-input{
+  margin-bottom: 10px;
+  align-items: stretch;
+}
+
+.todo-name,
+.todo-date{
+  font-size: 15px;
+  padding: 6px;
+}
+
+.todo-input{
+  margin-bottom: 10px;
+  align-items: stretch;
+}
+
+.todo-add-btn{
+  background-color: green;
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.todo-delete-btn{
+  background-color: darkred;
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.todo-save-btn,
+.todo-edit-btn{
+  background-color:azure;
+  color: black;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.todo-input-edit{
+  display: none;
+}
+
+.todo-save-btn {
+  display: none;
+}
+
+.is-editing-btn .todo-name{
+  display: none;
+}
+
+.is-editing-btn .todo-date{
+  display: none;
+}
+
+.is-editing-btn .todo-edit-btn {
+  display: none;
+}
+
+.is-editing-btn .todo-input-edit{
+  display: initial;
+}
+
+.is-editing-btn .todo-save-btn {
+  display: initial;
+}
